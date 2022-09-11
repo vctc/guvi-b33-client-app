@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const Photos = () => {
   const [photos, setPhotos] = React.useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/api/photos")
+    fetch("https://server-app-78686787.herokuapp.com/api/photos")
       .then((response) => {
         return response.json();
       })
